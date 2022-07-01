@@ -1,0 +1,289 @@
+* {
+ margin: 0;
+ padding: 0;
+ text-decoration: none;
+ list-style: none;
+ box-sizing: border-box;
+ background-position: center;
+ background-size: cover;
+ background-color: transparent;
+}
+
+img {
+ width: 100%;
+ display: block;
+}
+
+a {
+ color: #fff;
+}
+
+button {
+ color: #fff;
+}
+
+/* akhir reset */
+
+html,
+body {
+ color: #fff;
+ scroll-behavior: smooth;
+ font-family: "poppinsMedium";
+ background-color: rgba(15,10,38,1);
+}
+
+.container {
+ display: grid;
+ row-gap: 100px;
+ padding: 0 10px;
+ position: relative;
+}
+
+
+/* wrapper_container */
+.wrapper_container {
+ display: grid;
+ justify-items: center;
+ row-gap: 30px;
+ padding-top: 5em;
+}
+
+/* akhir wrapper_container */
+
+/* nav */
+nav {
+ width: 100%;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ align-items: center;
+ justify-items: center;
+ padding: 10px 0;
+ justify-items: center;
+ position: fixed;
+ left: 0;
+ z-index: 999;
+ transition: .3s;
+}
+
+nav.navClass {
+ background-color: rgba(30,40,100,1);
+ box-shadow: 0 0 20px rgba(255,255,255,.1);
+}
+
+nav .navlink {
+ width: 300px;
+ position: absolute;
+ top: -800px;
+ background: linear-gradient(to bottom right,
+    rgba(30, 20, 135, 1), 
+    rgb(30, 20, 135, .4));
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 10px 0;
+ height: 400px;
+ justify-content: space-around;
+ border-radius: .30em;
+ transition: .3s;
+}
+/* akhir nav */
+
+/* header */
+header {
+ display: grid;
+ row-gap: 20px;
+ justify-items: center;
+ margin-top: 45px;
+}
+
+header .gambar {
+ width: 45%;
+}
+
+header p {
+ padding: 5px 20px 6px;
+ background-color: rgba(45, 50, 180, 1);
+ position: relative;
+}
+
+header p::before {
+ content: '';
+ width: 25px;
+ height: 5px;
+ display: block;
+ position: absolute;
+ top: -3px;
+ right: 0;
+ background-color: red;
+}
+
+header p::after {
+ content: '';
+ width: 25px;
+ height: 5px;
+ display: block;
+ position: absolute;
+ bottom: -3px;
+ left: 0;
+ background-color: red;
+}
+/* akhir header */
+
+/* about */
+.about {
+ row-gap: 35px;
+}
+
+.about .content {
+ display: grid;
+ grid-template-areas: 
+   'gambar info-device'
+   'detail-device detail-device';
+ align-items: center;
+ justify-items: center; 
+}
+
+.about .content .gambar {
+ grid-area: gambar;
+}
+
+.about .content .info-device {
+ grid-area: info-device;
+}
+
+.about .content .detail-device {
+ display: grid;
+ justify-items: center;
+ grid-area: detail-device;
+}
+/* akhir about */
+
+/* aplikasi */
+.aplikasi .contents .wrapper {
+ display: grid;
+ row-gap: 20px;
+ padding: 20px;
+ border: 2px solid rgba(50, 25, 150, 1);
+}
+
+.aplikasi .contents .wrapper .gambar {
+ width: 65%;
+ margin: 0 auto;
+}
+
+.aplikasi .contents .wrapper .info-aplikasi {
+ display: grid;
+ row-gap: 5px;
+ justify-items: start;
+ padding-top: 10px;
+ border-top: 2px solid rgba(130,130,222,1);
+}
+
+.aplikasi .contents .wrapper .detail-aplikasi {
+ display: grid;
+ row-gap: 10px;
+ justify-items: center;
+}
+/* akhir aplikasi */
+
+/* skills */
+.skills {
+ display: grid;
+ grid-template-areas: 
+   'leftText rightText'
+   'contents contents';
+ justify-items: center;
+}
+
+.skills h4 {
+ grid-area: leftText;
+}
+
+.skills h5 {
+ grid-area: rightText;
+ border-bottom: 2px solid rgba(50, 65, 120, 1);
+}
+
+.skills .contents {
+ display: grid;
+ row-gap: 30px;
+ justify-items: center;
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ grid-area: contents;
+}
+
+.skills .contents .wrapper {
+	width: 85%;
+}
+/* akhir skills */
+
+/* channels */
+
+.channels .contents .wrapper {
+ display: grid;
+ padding: 10px 0;
+ justify-items: center;
+ align-items: center;
+ text-align: center;
+ background-color: rgba(20, 24, 74, 1);
+}
+
+.channels .contents .wrapper .wrapper-gambar{
+ width: 35%;
+ margin: auto;
+}
+
+/* akhir channel */
+
+
+
+/* modal channel */
+.modal-channel {
+ display: none;
+ height: 100vh;
+ width: 100%;
+ position: fixed;
+ align-items: center;
+ top: 0;
+ left: 0;
+}
+
+.modal-channel .wrapper {
+ display: none;
+ padding: 10px 15px;
+ justify-items: center;
+ border-radius: 5px;
+ background: linear-gradient(to top, 
+  rgba(35, 24, 125, 1), 
+  rgba(35, 24, 65, .2));
+ border: 2px solid rgba(60, 55, 122, 1);
+}
+
+
+.modal-channel .wrapper .gambar {
+  width: 45%;
+  margin: 0 auto;
+}
+/* akhir modal channel */
+
+
+footer {
+ width: 100%;
+ padding: 12px 0;
+ display: grid;
+ justify-items: center;
+ background-color: rgba(34, 33, 124, 1);
+}
+
+footer h3 {
+ 
+}
+
+
+
+
+
+
+
+
+

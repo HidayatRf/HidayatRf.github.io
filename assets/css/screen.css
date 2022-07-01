@@ -1,0 +1,127 @@
+@media (min-width: 600px) {
+ 
+ h3 {
+  
+  font-size: 1.2rem;
+ }
+ 
+ h4 {
+  font-size: 1.1rem;
+ }
+ 
+ p, 
+ a,
+ button {
+  font-size: 1.1rem;
+ }
+ 
+ /* skills */
+ .skills h4 {
+  font-size: 1.2rem;
+ }
+ /* akhir skills */
+ 
+ /* aplikasi */
+  .aplikasi .contents .wrapper .gambar {
+   width: 40%;
+  }
+ /* akhir aplikasi */
+ 
+ /* channel */
+  .channels .contents .wrapper {
+   width: 95%;
+   grid-template-columns: 1fr 1fr;
+  }
+  
+  .channels .contents .wrapper .wrapper-gambar {
+   width: 60%;
+  }
+  
+  .channels .contents .wrapper .info-channel{
+   width: 80%;
+  }
+ /* akhir channel */
+ 
+ /* modal channel */
+ .modal-channel .wrapper .gambar {
+  width: 40%;
+ }
+ /* akhir modal channel */
+}
+
+
+@media (min-width: 768px) {
+ nav {
+  grid-template-columns: .5fr 1.3fr;
+ }
+ 
+ nav .btn {
+  display: none;
+ }
+ 
+ nav .navlink {
+  width: 85%;
+  height: 100%;
+  position: static;
+  flex-direction: row;
+  background: transparent;
+  justify-content: space-between;
+ }
+ 
+ .about .content .gambar {
+  width: 65%;
+ }
+ 
+ .about .content .info-device {
+  justify-self: start;
+ }
+}
+
+
+
+@media (min-width: 980px) {
+ /* aplikasi */
+ .aplikasi .contents {
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+ }
+ /* akhir aplikasi */
+ 
+ .channels .contents .wrapper {
+  width: 80%;
+ }
+ 
+ /* modal channel */
+ .modal-channel .wrapper {
+  width: 90%;
+  margin: auto;
+  grid-template-areas: 
+    "gambar detail-channel"
+    "info-channel media"
+    "close close";
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+ }
+ 
+ .modal-channel .wrapper .gambar {
+  grid-area: gambar;
+ }
+ 
+ .modal-channel .wrapper .info-channel {
+  grid-area: info-channel;
+ }
+ 
+ .modal-channel .wrapper .detail-channel {
+  grid-area: detail-channel;
+ }
+ 
+ .modal-channel .wrapper .media {
+  grid-area: media;
+ }
+ 
+ .modal-channel .wrapper button {
+  grid-area: close;
+ }
+ /* akhir modal channel */
+}

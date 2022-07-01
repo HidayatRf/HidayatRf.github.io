@@ -1,0 +1,14 @@
+.capital {
+	text-transform: capitalize;
+}
+
+
+.btn {
+	padding: .20em .60em .30em;
+	border-radius: .30em;
+	border: 2px solid rgba(168, 196, 253, 1);
+}
+
+.rounded-img {
+	border-radius: 100%;
+}

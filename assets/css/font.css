@@ -1,0 +1,19 @@
+@font-face {
+	font-family: "interRegu";
+	src: url("../font/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "interMedium";
+	src: url("../font/Inter-Medium.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "poppinsMedium";
+	src: url("../font/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "poppinsItalic";
+	src: url("../font/Poppins-Italic.ttf") format("truetype");
+}
