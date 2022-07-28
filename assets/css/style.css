@@ -114,6 +114,11 @@ header p::before {
  position: absolute;
  top: -3px;
  right: 0;
+ animation-name: before;
+ animation-duration: 1s;
+ animation-timing-function: ease-in-out;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
  background-color: red;
 }
 
@@ -126,6 +131,43 @@ header p::after {
  bottom: -3px;
  left: 0;
  background-color: red;
+ animation-name: after;
+ animation-duration: 1s;
+ animation-timing-function: ease-in-out;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+}
+
+@keyframes before {
+	0% {
+		right: 0;
+		opacity: 0;
+	}
+	
+	50% {
+		opacity: 1;
+	}
+	
+	100% {
+		right: 87%;
+		opacity: 0;
+	}
+}
+
+@keyframes after {
+	0% {
+		left: 0;
+		opacity: 0;
+	}
+	
+	50% {
+		opacity: 1;
+	}
+	
+	100% {
+		left: 90%;
+		opacity: 0;
+	}
 }
 /* akhir header */
 
@@ -149,6 +191,7 @@ header p::after {
 
 .about .content .info-device {
  grid-area: info-device;
+ font-size: .90rem;
 }
 
 .about .content .detail-device {

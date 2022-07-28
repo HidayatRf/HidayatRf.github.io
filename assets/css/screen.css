@@ -1,314 +1,320 @@
 @media (min-width: 600px) {
- 
- h3 {
-  
-  font-size: 1.2rem;
- }
- 
- h4 {
-  font-size: 1.1rem;
- }
- 
- p, 
- a,
- button {
-  font-size: 1.1rem;
- }
- 
- /* skills */
- .skills h4 {
-  font-size: 1.2rem;
- }
- /* akhir skills */
- 
- /* aplikasi */
-  .aplikasi .contents .wrapper .gambar {
-   width: 40%;
-  }
- /* akhir aplikasi */
- 
- /* channel */
-  .channels .contents .wrapper {
-   width: 95%;
-   grid-template-columns: 1fr 1fr;
-  }
-  
-  .channels .contents .wrapper .wrapper-gambar {
-   width: 60%;
-  }
-  
-  .channels .contents .wrapper .info-channel{
-   width: 80%;
-  }
- /* akhir channel */
- 
- /* modal channel */
- .modal-channel .wrapper .gambar {
-  width: 40%;
- }
- /* akhir modal channel */
+
+	h3 {
+
+		font-size: 1.2rem;
+	}
+
+	h4 {
+		font-size: 1.1rem;
+	}
+
+	p,
+	a,
+	button {
+		font-size: 1.1rem;
+	}
+
+	/* skills */
+	.skills h4 {
+		font-size: 1.2rem;
+	}
+
+	/* akhir skills */
+
+	/* aplikasi */
+	.aplikasi .contents .wrapper .gambar {
+		width: 40%;
+	}
+
+	/* akhir aplikasi */
+
+	/* channel */
+	.channels .contents .wrapper {
+		width: 95%;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.channels .contents .wrapper .wrapper-gambar {
+		width: 60%;
+	}
+
+	.channels .contents .wrapper .info-channel {
+		width: 80%;
+	}
+
+	/* akhir channel */
+
+	/* modal channel */
+	.modal-channel .wrapper .gambar {
+		width: 40%;
+	}
+
+	/* akhir modal channel */
 }
 
 
 @media (min-width: 768px) {
- nav {
-  grid-template-columns: .5fr 1.3fr;
- }
- 
- nav .btn {
-  display: none;
- }
- 
- nav .navlink {
-  width: 85%;
-  height: 100%;
-  position: static;
-  flex-direction: row;
-  background: transparent;
-  justify-content: space-between;
- }
- 
- .about .content .gambar {
-  width: 65%;
- }
- 
- .about .content .info-device {
-  justify-self: start;
- }
+	nav {
+		grid-template-columns: .5fr 1.3fr;
+	}
+
+	nav .btn {
+		display: none;
+	}
+
+	nav .navlink {
+		width: 85%;
+		height: 100%;
+		position: static;
+		flex-direction: row;
+		background: transparent;
+		justify-content: space-between;
+	}
+
+	.about .content .gambar {
+		width: 65%;
+	}
+
+	.about .content .info-device {
+		justify-self: start;
+	}
 }
 
 
 
 @media (min-width: 980px) {
- /* header */
- header .gambar {
-  width: 35%;
- }
- /* akhir header */
- 
- /* about */
- .about .content .gambar {
-  width: 65%;
- }
- /* akhir about */
- 
- /* aplikasi */
- .aplikasi .contents {
-  gap: 30px;
-  grid-template-columns: 1fr 1fr;
- }
- /* akhir aplikasi */
- 
- .channels .contents .wrapper {
-  width: 80%;
- }
- 
- /* modal channel */
- .modal-channel .wrapper {
-  width: 90%;
-  margin: 0 auto;
-  grid-template-areas: 
-    "gambar detail-channel"
-    "info-channel media"
-    "close close";
-  justify-content: space-around;
-  justify-items: center;
-  align-items: center;
- }
- 
- .modal-channel .wrapper .gambar {
-  grid-area: gambar;
-  width: 40%;
- }
- 
- .modal-channel .wrapper .info-channel {
-  grid-area: info-channel;
-  text-align: center;
-  width: 60%;
- }
- 
- .modal-channel .wrapper .detail-channel {
-  grid-area: detail-channel;
-  width: 90%;
- }
- 
- .modal-channel .wrapper .media {
-  width: 50%;
-  grid-area: media;
- }
- 
- .modal-channel .wrapper button {
-  grid-area: close;
- }
- /* akhir modal channel */
+
+	/* header */
+	header .gambar {
+		width: 35%;
+	}
+
+	/* akhir header */
+
+	/* about */
+	.about .content .gambar {
+		width: 50%;
+	}
+
+	/* akhir about */
+
+	/* aplikasi */
+	.aplikasi .contents {
+		gap: 30px;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	/* akhir aplikasi */
+
+	.channels .contents .wrapper {
+		width: 80%;
+	}
+
+	/* modal channel */
+	.modal-channel .wrapper {
+		width: 90%;
+		margin: 0 auto;
+		grid-template-areas:
+			"gambar detail-channel"
+			"info-channel media"
+			"close close";
+		justify-content: space-around;
+		justify-items: center;
+		align-items: center;
+	}
+
+	.modal-channel .wrapper .gambar {
+		grid-area: gambar;
+		width: 40%;
+	}
+
+	.modal-channel .wrapper .info-channel {
+		grid-area: info-channel;
+		text-align: center;
+		width: 60%;
+	}
+
+	.modal-channel .wrapper .detail-channel {
+		grid-area: detail-channel;
+		width: 90%;
+	}
+
+	.modal-channel .wrapper .media {
+		width: 50%;
+		grid-area: media;
+	}
+
+	.modal-channel .wrapper button {
+		grid-area: close;
+	}
+
+	/* akhir modal channel */
 }
 
 
 @media (min-width: 1330px) {
- h3 {
-  
-  font-size: 1.4rem;
- }
- 
- h4 {
-  font-size: 1.45rem;
- }
-  
- a,
- button {
-  font-size: 1.1rem;
- }
- 
- 
- p {
-  font-size: 1.25rem;
- }
- 
- /* header */
- header .gambar {
-  width: 30%;
-  margin-top: 3em;
- }
- 
- header p {
-  font-size: 1.3rem;
- }
- /* akhir header */
- 
- /* about */
- .about {
-  padding: 5em 8em;
- }
- /* akhir about */
- 
- /* aplikasi */
- .aplikasi .contents {
-  grid-template-columns: 1fr;
- }
- 
- .aplikasi .contents .wrapper {
-  width: 85%;
-  margin: 0 auto;
-  grid-template-areas: 
-    "gambar detail-aplikasi"
-    "info-aplikasi detail-aplikasi";
-  justify-items: center;
-  justify-content: space-around;
-  grid-temlate-columns: 1.1fr 1fr;
-  align-items: center;
- }
- 
- .aplikasi .contents .wrapper .gambar {
-  width: 60%;
-  grid-area: gambar;
- }
- 
- .aplikasi .contents .wrapper .info-aplikasi {
-  width: 70%;
-  grid-area: info-aplikasi;
- }
- 
- .aplikasi .contents .wrapper .detail-aplikasi {
-  width: 90%;
-  grid-area: detail-aplikasi;
- }
- 
- .aplikasi .contents .wrapper .detail-aplikasi h3 {
-  margin-bottom: 10px;
- }
- /* akhir aplikasi */
- 
- /* channel */
- .channels .contents .wrapper .wrapper-gambar {
-  width: 45%;
- }
- /* akhir channel */
+	h3 {
+
+		font-size: 1.4rem;
+	}
+
+	h4 {
+		font-size: 1.45rem;
+	}
+
+	a,
+	button {
+		font-size: 1.1rem;
+	}
+
+
+	p {
+		font-size: 1.25rem;
+	}
+
+	/* header */
+	header .gambar {
+		width: 30%;
+		margin-top: 3em;
+	}
+
+	header p {
+		font-size: 1.3rem;
+	}
+
+	/* akhir header */
+
+	/* about */
+	.about {
+		padding: 5em 8em;
+	}
+
+	/* akhir about */
+
+	/* aplikasi */
+	.aplikasi .contents {
+		grid-template-columns: 1fr;
+	}
+
+	.aplikasi .contents .wrapper {
+		width: 85%;
+		margin: 0 auto;
+		grid-template-areas:
+			"gambar detail-aplikasi"
+			"info-aplikasi detail-aplikasi";
+		justify-items: center;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.aplikasi .contents .wrapper .gambar {
+		width: 60%;
+		grid-area: gambar;
+	}
+
+	.aplikasi .contents .wrapper .info-aplikasi {
+		width: 70%;
+		grid-area: info-aplikasi;
+	}
+
+	.aplikasi .contents .wrapper .detail-aplikasi {
+		width: 90%;
+		grid-area: detail-aplikasi;
+	}
+
+	.aplikasi .contents .wrapper .detail-aplikasi h3 {
+		margin-bottom: 10px;
+	}
+
+	/* akhir aplikasi */
+
+	/* channel */
+	.channels .contents .wrapper .wrapper-gambar {
+		width: 45%;
+	}
+
+	/* akhir channel */
 }
 
 
 
 @media (min-width: 1880px) {
- h3 {
-  font-size: 2rem;
- }
- 
- h4 {
-  font-size: 1.99rem;
- }
- 
- p {
-  font-size: 1.60rem;
- }
- 
- a {
-  font-size: 1.66rem;
- }
- 
- button {
-  font-size: 1.4rem;
- }
- 
- /* header */
- header .gambar {
-  width: 30%;
- }
- 
- header p {
-  font-size: 2rem;
- }
- /* akhir header */
- 
- /* about */
- .about {
-   padding: 0 10em;
- }
- 
- .about .gambar {
-  width: 30%;
- }
- 
- .about .content {
-  align-items: center;
-  grid-template-areas: "gambar info-device" "gambar detail-device";
- }
- /* akhir about */
- 
- /* aplikasi */
- .aplikasi .contents {
-  grid-template-columns: 2fr 2fr;
-  align-items: center;
- }
- 
- .aplikasi .contents .wrapper {
-  width: 100%;
-  grid-template-areas: 
-    "gambar info-aplikasi"
-    'detail-aplikasi detail-aplikasi';
- }
- 
- .aplikasi .contents .wrapper .info-aplikasi {
-  border: none;
- }
- 
- .aplikasi .contents .wrapper .detail-aplikasi {
-  width: 95%;
-  border-top: 2px solid rgba(45, 30, 102, 1);
- }
- /* akhir aplikasi */
- 
- /* channels */
- .channels .contents {
-  grid-template-columns: 1fr 1fr;
- }
- /* akhir channels */
+	h3 {
+		font-size: 2rem;
+	}
+
+	h4 {
+		font-size: 1.99rem;
+	}
+
+	p {
+		font-size: 1.60rem;
+	}
+
+	a {
+		font-size: 1.66rem;
+	}
+
+	button {
+		font-size: 1.4rem;
+	}
+
+	/* header */
+	header .gambar {
+		width: 30%;
+	}
+
+	header p {
+		font-size: 2rem;
+	}
+
+	/* akhir header */
+
+	/* about */
+	.about {
+		padding: 0 10em;
+	}
+
+	.about .gambar {
+		width: 30%;
+	}
+
+	.about .content {
+		align-items: center;
+		grid-template-areas: "gambar info-device""gambar detail-device";
+	}
+
+	/* akhir about */
+
+	/* aplikasi */
+	.aplikasi .contents {
+		grid-template-columns: 2fr 2fr;
+		align-items: center;
+	}
+
+	.aplikasi .contents .wrapper {
+		width: 100%;
+		grid-template-areas:
+			"gambar info-aplikasi"
+			'detail-aplikasi detail-aplikasi';
+	}
+
+	.aplikasi .contents .wrapper .info-aplikasi {
+		border: none;
+	}
+
+	.aplikasi .contents .wrapper .detail-aplikasi {
+		width: 95%;
+		border-top: 2px solid rgba(45, 30, 102, 1);
+	}
+
+	/* akhir aplikasi */
+
+	/* channels */
+	.channels .contents {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	/* akhir channels */
 }
-
-
-
-
-
-
-
-
-
-
