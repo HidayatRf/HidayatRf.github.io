@@ -4,19 +4,20 @@ const navlink = navbar.querySelector('.navlink')
 const closeNav = navlink.querySelector('button')
 
 openNav.addEventListener('click', () => {
-	navlink.style.top = 0
+	navbarHeight = navbar.clientHeight
+	navlink.style.top = navbarHeight + "px"
 	openNav.style.opacity = "0"
 	setTimeout(() => {
 	 navlink.style.right = 0;
-	}, 600)
+	}, 800)
 	navlink.style.backdropFilter = 'blur(0px)'
 })
 
 closeNav.addEventListener('click', () => {
-	navlink.style.top = -3000 + 'px'
+	navlink.style.top = -800 + 'px'
 	setTimeout(() => {
 	 navlink.style.right = "inherit"
-	}, 100)
+	}, 300)
 	navlink.style.backdropFilter = 'blur(0px)'
 	openNav.style.opacity = 1
 })

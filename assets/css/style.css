@@ -84,7 +84,7 @@ nav .navlink {
  height: 400px;
  justify-content: space-around;
  border-radius: .30em;
- transition: .3s;
+ transition: .6s;
 }
 /* akhir nav */
 
@@ -102,6 +102,7 @@ header .gambar {
 
 header p {
  padding: 5px 20px 6px;
+ border-radius: .30em;
  background-color: rgba(45, 50, 180, 1);
  position: relative;
 }
@@ -267,9 +268,16 @@ header p::after {
  padding: 10px 0;
  justify-items: center;
  align-items: center;
+ row-gap: 10px;
  text-align: center;
  background-color: rgba(20, 24, 74, 1);
 }
+
+.channels .contents .wrapper .info-channel {
+	display: grid;
+	row-gap: 5px;
+	justify-items: center;
+} 
 
 .channels .contents .wrapper .wrapper-gambar{
  width: 35%;

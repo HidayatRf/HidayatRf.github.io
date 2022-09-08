@@ -38,9 +38,11 @@
 	.channels .contents .wrapper .wrapper-gambar {
 		width: 60%;
 	}
-
+  
+  
 	.channels .contents .wrapper .info-channel {
 		width: 80%;
+		row-gap: 15px;
 	}
 
 	/* akhir channel */
@@ -79,6 +81,10 @@
 	.about .content .info-device {
 		justify-self: start;
 	}
+	
+	.channels .contents .wrapper .info-channel {
+	 row-gap: 10px;
+	}	
 }
 
 
@@ -109,8 +115,8 @@
 
 	.channels .contents .wrapper {
 		width: 80%;
-	}
-
+	}  
+  
 	/* modal channel */
 	.modal-channel .wrapper {
 		width: 90%;
@@ -133,6 +139,7 @@
 		grid-area: info-channel;
 		text-align: center;
 		width: 60%;
+		row-gap: 10px;
 	}
 
 	.modal-channel .wrapper .detail-channel {
@@ -230,8 +237,16 @@
 	/* akhir aplikasi */
 
 	/* channel */
+	.channels .contents {
+	 grid-template-columns: 1fr 1fr;
+	}
+	
 	.channels .contents .wrapper .wrapper-gambar {
 		width: 45%;
+	}
+
+	.channels .contents .wrapper .info-channel {
+	 row-gap: 12px;
 	}
 
 	/* akhir channel */
