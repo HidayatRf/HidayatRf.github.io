@@ -23,6 +23,10 @@
 	/* akhir skills */
 
 	/* aplikasi */
+	.aplikasi .contents {
+	 padding: 2em;
+	}
+	
 	.aplikasi .contents .wrapper .gambar {
 		width: 40%;
 	}
@@ -42,7 +46,7 @@
   
 	.channels .contents .wrapper .info-channel {
 		width: 80%;
-		row-gap: 15px;
+		row-gap: 10px;
 	}
 
 	/* akhir channel */
@@ -64,16 +68,26 @@
 	nav .btn {
 		display: none;
 	}
-
+  
+  .container {
+   justify-self: center;
+   max-width: 90%;
+  }
+  
 	nav .navlink {
 		width: 85%;
 		height: 100%;
 		position: static;
 		flex-direction: row;
+		border: none !important;
 		background: transparent;
 		justify-content: space-between;
 	}
-
+  
+  .about {
+   padding: 1.5em;
+  }
+  
 	.about .content .gambar {
 		width: 65%;
 	}
@@ -82,6 +96,13 @@
 		justify-self: start;
 	}
 	
+	.aplikasi .contents {
+	 padding: 4em;
+	}
+	
+.aplikasi .contents .wrapper {
+ padding: 2em;
+}
 	.channels .contents .wrapper .info-channel {
 	 row-gap: 10px;
 	}	

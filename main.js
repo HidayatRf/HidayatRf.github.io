@@ -1,23 +1,19 @@
 const navbar = document.querySelector('nav')
+const uNavItem = navbar.querySelectorAll('.unavailable')
 const openNav = navbar.querySelector('button')
 const navlink = navbar.querySelector('.navlink')
 const closeNav = navlink.querySelector('button')
 
 openNav.addEventListener('click', () => {
-	navbarHeight = navbar.clientHeight
-	navlink.style.top = navbarHeight + "px"
+	navlink.style.top = 0 + "px"	
+	navlink.style.right = 0
 	openNav.style.opacity = "0"
-	setTimeout(() => {
-	 navlink.style.right = 0;
-	}, 800)
 	navlink.style.backdropFilter = 'blur(0px)'
+	uNavItem.forEach(item => item.style.color = "rgba(180, 20, 20, .6)")
 })
 
 closeNav.addEventListener('click', () => {
-	navlink.style.top = -800 + 'px'
-	setTimeout(() => {
-	 navlink.style.right = "inherit"
-	}, 300)
+	navlink.style.right = -1000 + "px"
 	navlink.style.backdropFilter = 'blur(0px)'
 	openNav.style.opacity = 1
 })
@@ -48,8 +44,6 @@ for ( let i = 0; i < closeModalEl.length; i++ ) {
 function showModalChannel(button) {
 	modalEl.forEach(el => {
 		if (button.dataset.id === el.dataset.id) {
-			console.log('ok')
-			console.log(el)
 			modalChannel.style.display = "flex"
 			modalChannel.style.backdropFilter = "blur(5px)"
 			el.style.display = 'grid'

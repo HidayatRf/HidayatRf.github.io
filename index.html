@@ -10,13 +10,13 @@
 	<link rel="stylesheet" href="./assets/css/reuseClass.css">
 	<link rel="stylesheet" href="./assets/css/font.css">
 	<link rel="stylesheet" href="./assets/css/screen.css">
-	
+
 	<title>HidayatRf</title>
 </head>
 
 <body>
 
-	<div class="container">
+	<section class="container">
 		<!-- navbar -->
 		<nav>
 			<h3 class="capital">hidayatRf</h3>
@@ -24,10 +24,10 @@
 			<ul class="navlink">
 				<li><a href="#about" class="link capital">about</a></li>
 				<li><a href="#aplikasi" class="link capital">aplikasi</a></li>
-				<li><a href="#skills" class="link capital">skills</a></li>
-				<li><a href="#none" class="link capital">project</a></li>
+				<li><a href="#skills" class="link capital unavailable">skills</a></li>
+				<li><a href="#none" class="link capital unavailable">project</a></li>
 				<li><a href="#channels" class="link capital">channels</a></li>
-				<li><a href="contack-me.html" class="link capital">contack me</a></li>
+				<li><a href="contack-me.html" class="link capital unavailable">contack me</a></li>
 				<li><button class="btn capital" type="submit">X</button></li>
 			</ul>
 		</nav>
@@ -49,7 +49,6 @@
 				saya merupakan seorang junior
 				web developer, yang sedang berusaha
 				dalam memahami logika dan algoritm dari bahasa pemrograman yang saya pelajari.
-				
 			</p>
 			<div class="content">
 				<img src="./assets/image/Device.png" alt="" class="gambar">
@@ -82,8 +81,8 @@
 			<h3 class="capital">
 				daftar aplikasi
 			</h3>
-			<div class="contents wrapper_container">
-				<div class="wrapper">
+			<section class="contents wrapper_container">
+				<section class="wrapper">
 					<img src="./assets/image/aplikasions/spck.png" alt="" class="gambar">
 					<div class="info info-aplikasi">
 						<p class="capital">nama : spck editor pro</p>
@@ -96,12 +95,12 @@
 						<p class="capital detail">
 							spck editor pro, merupakan kode editor yang memiliki fitur
 							hampir sama seperti kode editor yang ada di komputer maupun laptop,
-							spck editor pro, sering saya gunakan dalam membuat code yang berhubungan dengan 
+							spck editor pro, sering saya gunakan dalam membuat code yang berhubungan dengan
 							web, karena memiliki fitur melihat hasil dari code HTML yang kita tulis
 						</p>
 					</div>
-				</div>
-				<div class="wrapper">
+				</section>
+				<section class="wrapper">
 					<img src="./assets/image/aplikasions/treb.png" alt="" class="gambar">
 					<div class="info info-aplikasi">
 						<p class="capital">nama : treb edit</p>
@@ -113,12 +112,12 @@
 						<h4 class="capital">detail</h4>
 						<p class="capital detail">
 							treb edit, saya gunakan ketika mau mengerjakan <strong>responsive web design</strong>
-							karena di spck editor pro, tidak memiliki fitur untuk 
+							karena di spck editor pro, tidak memiliki fitur untuk
 							melihat berbagai ukuran device seperti laptop atau komputer
 						</p>
 					</div>
-				</div>
-				<div class="wrapper">
+				</section>
+				<section class="wrapper">
 					<img src="./assets/image/aplikasions/termux.png" alt="" class="gambar">
 					<div class="info info-aplikasi">
 						<p class="capital">nama : termux command line</p>
@@ -131,11 +130,11 @@
 						<p class="capital detail">
 							termux saya gunakan untuk mengkontrol repository menggunakan git,
 							tidak hanya itu saja, termux kadang saya gunakan dalam berlatih dengan bahasa
-							pemrograman python. dan banyak hal lagi yang dapat dilakukan termux 
+							pemrograman python. dan banyak hal lagi yang dapat dilakukan termux
 						</p>
 					</div>
-				</div>
-				<div class="wrapper">
+				</section>
+				<section class="wrapper">
 					<img src="./assets/image/aplikasions/pixellab.png" alt="" class="gambar">
 					<div class="info info-aplikasi">
 						<p class="capital">nama : pixellab</p>
@@ -146,12 +145,12 @@
 					<div class="details detail-aplikasi">
 						<h4 class="capital">detail</h4>
 						<p class="capital detail">
-							pixellab digunakan ketika mengubah/merize ukuran dari gambar yang ingin 
+							pixellab digunakan ketika mengubah/merize ukuran dari gambar yang ingin
 							ditampilkan di web
 						</p>
 					</div>
-				</div>
-				<div class="wrapper">
+				</section>
+				<section class="wrapper">
 					<img src="./assets/image/aplikasions/key.png" alt="" class="gambar">
 					<div class="info info-aplikasi">
 						<p class="capital">nama : hacker's keyboard</p>
@@ -162,16 +161,16 @@
 					<div class="details detail-aplikasi">
 						<h4 class="capital">detail</h4>
 						<p class="capital detail">
-							hacker's keyboard berfungsi untuk mengubah <strong>key</strong> yang ada 
-							di dalam device agar mirip dengan komputer atau laptop yang memiliki key yang 
+							hacker's keyboard berfungsi untuk mengubah <strong>key</strong> yang ada
+							di dalam device agar mirip dengan komputer atau laptop yang memiliki key yang
 							lengkap
 					</div>
-				</div>
-			</div>
+				</section>
+			</section>
 		</section>
 		<!-- akhir aplikasi -->
-  
-  <!--
+
+		<!--
     masih dalam pengembangan
 		<section id="skills" class="skills wrapper_container">
 			<h4 class="capital">my skills</h4>
@@ -189,11 +188,11 @@
 			</div>
 		</section>
     -->
-    
+
 		<!-- channels -->
 		<section id="channels" class="channels wrapper_container">
 			<h3 class="capital">indonesia channel programming</h3>
-			<div class="contents wrapper_container">
+			<section class="contents">
 				<div class="wrapper">
 					<div class="wrapper-gambar">
 						<img src="./assets/image/wpu.jpg" alt="" class="gambar rounded-img">
@@ -229,7 +228,8 @@
 							details chanel
 						</button>
 					</div>
-			</div>
+				</div>
+			</section>
 		</section>
 		<!-- akhir channels -->
 
@@ -238,67 +238,79 @@
 			<div data-id="wpu" class="wrapper wrapper_container">
 				<img src="./assets/image/wpu.jpg" alt="" class="gambar rounded-img">
 				<div class="info info-channel">
-					<p class="capital">web programming unpas</p>
-					<p class="capital">230.000 subscribers</p>
+					<p class="capital">nama : web programming unpas</p>
+					<p class="capital">subscriber : 230.000</p>
 				</div>
 				<div class="media">
+					<p class="upperC">follow :</p>
 					<a href="#none"><i class="fa-brands fa-youtube"></i></a>
 					<a href="#none"><i class="fa-brands fa-instagram"></i></a>
 					<a href="#none"><i class="fa-brands fa-discord"></i></a>
 					<a href="#none"><i class="fa-brands fa-twitter"></i></a>
 				</div>
 				<div class="detail detail-channel">
-				 <p>
-				 	web programming unpas, dichannel ini kalian akan diajari dasar dalam pembuatan web
-				 	mulai dari dasar <strong>HTML, CSS, JAVASCRIPT</strong> sampai pada framework 
-				 	dan bahkan diajari juga dalam pengembangan
-				 	web jalur backend yang dimana berhubungan dengan basis data pada web tersebut
-				  </p>
+					<h4 class="upperC">
+						deskripsi cahnnel
+					</h4>
+					<p>
+						web programming unpas, dichannel ini kalian akan diajari dasar dalam pembuatan web
+						mulai dari dasar <strong>HTML, CSS, JAVASCRIPT</strong> sampai pada framework
+						dan bahkan diajari juga dalam pengembangan
+						web jalur backend yang dimana berhubungan dengan basis data pada web tersebut
+					</p>
 				</div>
 				<button class="btn close">close</button>
 			</div>
 			<div data-id="pZamanNow" class="wrapper wrapper_container">
 				<img src="./assets/image/p-z-m-n.jpg" alt="" class="gambar rounded-img">
 				<div class="info info-channel">
-					<p class="capital">programmer zaman now</p>
-					<p class="capital">180.000 subscribers</p>
+					<p class="capital">nama : programmer zaman now</p>
+					<p class="capital">subscriber : 180.000</p>
 				</div>
 				<div class="media">
+					<p class="upperC">follow :</p>
 					<a href="#none"><i class="fa-brands fa-youtube"></i></a>
 					<a href="#none"><i class="fa-brands fa-instagram"></i></a>
 					<a href="#none"><i class="fa-brands fa-discord"></i></a>
 					<a href="#none"><i class="fa-brands fa-twitter"></i></a>
 				</div>
 				<div class="detail detail-channel">
-        <p>
-        	di programmer zaman now kalian akan diberi materi tentang web developer
-        	tetapi lebih ke sisi backend atau bagian database, disina kalian akan diajari
-        	berbagai macam bahasa, seperti <strong>java, php, nodejs, javascript, golang</strong>
-        	tidak hanya materi tentang dasar dari bahasa tersebut, banyak vidio
-        	yang diuplod oleb programmer zaman now tentang cara interview kerja, tips and trik
-				 </p>
+					<h4 class="upperC">
+						deskripsi cahnnel
+					</h4>
+					<p>
+						di programmer zaman now kalian akan diberi materi tentang web developer
+						tetapi lebih ke sisi backend atau bagian database, disina kalian akan diajari
+						berbagai macam bahasa, seperti <strong>java, php, nodejs, javascript, golang</strong>
+						tidak hanya materi tentang dasar dari bahasa tersebut, banyak vidio
+						yang diuplod oleb programmer zaman now tentang cara interview kerja, tips and trik
+					</p>
 				</div>
 				<button class="btn close">close</button>
 			</div>
 			<div data-id="kelasTerbuka" class="wrapper wrapper_container">
 				<img src="./assets/image/kelasTerbuka.jpg" alt="" class="gambar rounded-img">
 				<div class="info info-channel">
-					<p class="capital">kelas terbuka</p>
-					<p class="capital">180.000 subscribers</p>
+					<p class="capital">nama : kelas terbuka</p>
+					<p class="capital">subscriber : 180.000</p>
 				</div>
 				<div class="media">
+					<p class="upperC">follow :</p>
 					<a href="#none"><i class="fa-brands fa-youtube"></i></a>
 					<a href="#none"><i class="fa-brands fa-instagram"></i></a>
 					<a href="#none"><i class="fa-brands fa-discord"></i></a>
 					<a href="#none"><i class="fa-brands fa-twitter"></i></a>
 				</div>
 				<div class="detail detail-channel">
+					<h4 class="upperC">
+						deskripsi cahnnel
+					</h4>
 					<p>
 						kelas terbuka, disini channel ini kalian akan
 						diajari dasar-dasar dari berbagai bahasa pemrograman seperti <strong>java, python dan cpp/c++</strong>
 						bahkan hingga konsep <strong>OOP</strong> atau object oriented programming,
 						atau dalam bahasa indonesia disebut pemprogtaman berorientasi objek
-				  </p>
+					</p>
 				</div>
 				<button class="btn close">close</button>
 			</div>
@@ -306,11 +318,11 @@
 		<!-- akhir modal channel -->
 
 		<!-- footer -->
-    <footer>
-     <h3>create by <span class="capital">HidayatRf | reza fairuz</span></h3>
-    </footer>
+		<footer>
+			<h3>create by <span class="capital">HidayatRf | reza fairuz</span></h3>
+		</footer>
 		<!-- akhir footer -->
-	</div>
+	</section>
 
 	<script src="./all.js"></script>
 	<script src="./main.js"></script>

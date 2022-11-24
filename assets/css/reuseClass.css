@@ -2,6 +2,9 @@
 	text-transform: capitalize;
 }
 
+.upperC {
+	text-transform: uppercase;
+}
 
 .btn {
 	padding: .20em .60em .30em;
