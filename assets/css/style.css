@@ -54,6 +54,10 @@ body {
 
 /* akhir wrapper_container */
 
+p.eng {
+	display: none;
+}
+
 /* nav */
 nav {
 	width: 100%;
@@ -349,7 +353,39 @@ header p::after {
 
 /* akhir modal channel */
 
+/* side tools */
+.side-tools {
+	display: grid;
+	align-content: center;
+	row-gap: 20px;
+	position: fixed;
+	max-width: 5%;
+	bottom: 1.5em;
+	right: 1em;
+	transition: .3s;
+}
 
+.side-tools:hover {
+	padding: 1em;
+	border-radius: 1em;
+	background-color: rgba(10, 65, 92, .8);
+	max-width: 15%;
+}
+
+.side-tools .english-subs {
+	border-radius: 100%;
+}
+
+.side-tools .rocket {
+	transition: .4s;
+}
+
+.side-tools .rocket:hover {
+	transform: translateY(-20vh);
+}
+/* akhir side tools */
+
+/* footer */
 footer {
 	width: 100%;
 	padding: 12px 0;
@@ -357,3 +393,4 @@ footer {
 	justify-items: center;
 	background-color: rgba(34, 33, 124, 1);
 }
+/* footer */

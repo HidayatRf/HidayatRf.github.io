@@ -5,7 +5,7 @@ const navlink = navbar.querySelector('.navlink')
 const closeNav = navlink.querySelector('button')
 
 openNav.addEventListener('click', () => {
-	navlink.style.top = 0 + "px"	
+	navlink.style.top = 0 + "px"
 	navlink.style.right = 0
 	openNav.style.opacity = "0"
 	navlink.style.backdropFilter = 'blur(0px)'
@@ -28,18 +28,18 @@ const modalChannel = document.querySelector('.modal-channel')
 const modalEl = modalChannel.querySelectorAll('.wrapper')
 const closeModalEl = modalChannel.querySelectorAll('button')
 
-buttonChannels.forEach( button => {
+buttonChannels.forEach(button => {
 	button.addEventListener('click', function() {
 		showModalChannel(this)
 	})
 })
-for ( let i = 0; i < closeModalEl.length; i++ ) {
+
+for (let i = 0; i < closeModalEl.length; i++) {
 	closeModalEl[i].addEventListener('click', () => {
 		modalChannel.style.display = "none"
 		modalEl[i].style.display = "none"
 	})
 }
-
 
 function showModalChannel(button) {
 	modalEl.forEach(el => {
@@ -59,3 +59,32 @@ window.addEventListener('scroll', () => {
 	navlink.style.backdropFilter = 'blur(5px)'
 })
 
+// side tools
+const sideTools = document.querySelector('.side-tools')
+const engSubs = sideTools.querySelector('.english-subs')
+
+const idSubsText = document.querySelectorAll('p.id')
+const engSubsText = document.querySelectorAll('p.eng')
+
+let coolDown = true
+engSubs.addEventListener('click', () => {
+	if (coolDown == true) {
+		alert("english subtitle on")
+		engSubs.style.border = "2px solid white"
+		for ( let i = 0; i < idSubsText.length; i++ ) {
+			idSubsText[i].style.display = "none"
+			engSubsText[i].style.display = "block"
+		}
+		coolDown = false
+		return
+	}else {
+		alert("english subtitle off")
+		engSubs.style.border = "none"
+		for (let i = 0; i < idSubsText.length; i++) {
+			idSubsText[i].style.display = "block"
+			engSubsText[i].style.display = "none"
+		}
+		coolDown = true
+		return
+	}
+})
