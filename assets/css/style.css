@@ -254,7 +254,7 @@ header p::after {
 /* akhir aplikasi */
 
 /* skills */
-/* .skills {
+.skills {
  display: grid;
  grid-template-areas: 
    'leftText rightText'
@@ -262,29 +262,35 @@ header p::after {
  justify-items: center;
 }
 
-.skills h4 {
- grid-area: leftText;
-}
-
-.skills h5 {
- grid-area: rightText;
- border-bottom: 2px solid rgba(50, 65, 120, 1);
-}
-
 .skills .contents {
  display: grid;
  row-gap: 30px;
+ padding-left: 2em;
+ padding-right: 2em; 
  justify-items: center;
  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
  grid-area: contents;
+ column-gap: 20px;
 }
 
-.skills .contents .wrapper {
-	width: 85%;
-} */
+.skills img {
+	border-top-left-radius: .45em;
+	border-top-right-radius: .45em;
+}
+
+.skills .info {
+	display: grid;
+	justify-items: center;
+	padding: 1em 0;
+	background-color: rgba(92, 93, 105, 1);
+}
 /* akhir skills */
 
 /* channels */
+.channels .contents {
+ padding-left: 2em;
+ padding-right: 2em;
+}
 
 .channels .contents .wrapper {
 	display: grid;
