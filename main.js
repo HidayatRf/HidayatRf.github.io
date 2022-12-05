@@ -66,6 +66,9 @@ const engSubs = sideTools.querySelector('.english-subs')
 const idSubsText = document.querySelectorAll('p.id')
 const engSubsText = document.querySelectorAll('p.eng')
 
+const h4Id = document.querySelectorAll("h4.id")
+const h4Eng = document.querySelectorAll("h4.eng")
+
 let coolDown = true
 engSubs.addEventListener('click', () => {
 	if (coolDown == true) {
@@ -75,6 +78,10 @@ engSubs.addEventListener('click', () => {
 			idSubsText[i].style.display = "none"
 			engSubsText[i].style.display = "block"
 		}
+		for(let i = 0; i < h4Id.length; i++) {
+			h4Id[i].style.display = "none"
+			h4Eng[i].style.display = "block"
+		}
 		coolDown = false
 		return
 	}else {
@@ -83,6 +90,10 @@ engSubs.addEventListener('click', () => {
 		for (let i = 0; i < idSubsText.length; i++) {
 			idSubsText[i].style.display = "block"
 			engSubsText[i].style.display = "none"
+		}
+		for (let i = 0; i < h4Id.length; i++) {
+			h4Id[i].style.display = "block"
+			h4Eng[i].style.display = "none"
 		}
 		coolDown = true
 		return

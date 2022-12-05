@@ -24,9 +24,9 @@
 
 	/* aplikasi */
 	.aplikasi .contents {
-	 padding: 2em;
+		padding: 2em;
 	}
-	
+
 	.aplikasi .contents .wrapper .gambar {
 		width: 40%;
 	}
@@ -42,8 +42,8 @@
 	.channels .contents .wrapper .wrapper-gambar {
 		width: 60%;
 	}
-  
-  
+
+
 	.channels .contents .wrapper .info-channel {
 		width: 80%;
 		row-gap: 10px;
@@ -61,6 +61,35 @@
 
 
 @media (min-width: 768px) {
+	.about {
+		padding: 1.5em;
+	}
+
+	.about .content .gambar {
+		width: 65%;
+	}
+
+	.about .content .info-device {
+		justify-self: start;
+	}
+
+	.aplikasi .contents {
+		padding: 4em;
+	}
+
+	.aplikasi .contents .wrapper {
+		padding: 2em;
+	}
+
+	.channels .contents .wrapper .info-channel {
+		row-gap: 10px;
+	}
+}
+
+
+
+@media (min-width: 980px) {
+
 	nav {
 		grid-template-columns: .5fr 1.3fr;
 	}
@@ -68,12 +97,12 @@
 	nav .btn {
 		display: none;
 	}
-  
-  .container {
-   justify-self: center;
-   max-width: 90%;
-  }
-  
+
+	.container {
+		justify-self: center;
+		max-width: 95%;
+	}
+
 	nav .navlink {
 		width: 85%;
 		height: 100%;
@@ -83,34 +112,7 @@
 		background: transparent;
 		justify-content: space-between;
 	}
-  
-  .about {
-   padding: 1.5em;
-  }
-  
-	.about .content .gambar {
-		width: 65%;
-	}
 
-	.about .content .info-device {
-		justify-self: start;
-	}
-	
-	.aplikasi .contents {
-	 padding: 4em;
-	}
-	
-.aplikasi .contents .wrapper {
- padding: 2em;
-}
-	.channels .contents .wrapper .info-channel {
-	 row-gap: 10px;
-	}	
-}
-
-
-
-@media (min-width: 980px) {
 
 	/* header */
 	header .gambar {
@@ -129,6 +131,8 @@
 	/* aplikasi */
 	.aplikasi .contents {
 		gap: 30px;
+		padding-left: 1em;
+		padding-right: 1em;
 		grid-template-columns: 1fr 1fr;
 	}
 
@@ -136,8 +140,8 @@
 
 	.channels .contents .wrapper {
 		width: 80%;
-	}  
-  
+	}
+
 	/* modal channel */
 	.modal-channel .wrapper {
 		width: 90%;
@@ -221,19 +225,27 @@
 	/* akhir about */
 
 	/* aplikasi */
+	.aplikasi {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
 	.aplikasi .contents {
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 10px;
 	}
 
 	.aplikasi .contents .wrapper {
 		width: 85%;
 		margin: 0 auto;
 		grid-template-areas:
-			"gambar detail-aplikasi"
-			"info-aplikasi detail-aplikasi";
+			"gambar info-aplikasi"
+			"detail-aplikasi detail-aplikasi";
 		justify-items: center;
 		justify-content: space-around;
 		align-items: center;
+		padding-left: 1em;
+		padding-right: 1em;
 	}
 
 	.aplikasi .contents .wrapper .gambar {
@@ -259,21 +271,19 @@
 
 	/* channel */
 	.channels .contents {
-	 grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
 	}
-	
+
 	.channels .contents .wrapper .wrapper-gambar {
 		width: 45%;
 	}
 
 	.channels .contents .wrapper .info-channel {
-	 row-gap: 12px;
+		row-gap: 12px;
 	}
 
 	/* akhir channel */
 }
-
-
 
 @media (min-width: 1880px) {
 	h3 {

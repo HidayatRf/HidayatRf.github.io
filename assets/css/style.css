@@ -28,7 +28,7 @@ button {
 
 html,
 body {
-  display: grid;
+	display: grid;
 	color: #fff;
 	scroll-behavior: smooth;
 	font-family: "poppinsMedium";
@@ -55,6 +55,10 @@ body {
 /* akhir wrapper_container */
 
 p.eng {
+	display: none;
+}
+
+h4.eng {
 	display: none;
 }
 
@@ -255,22 +259,18 @@ header p::after {
 
 /* skills */
 .skills {
- display: grid;
- grid-template-areas: 
-   'leftText rightText'
-   'contents contents';
- justify-items: center;
+	display: grid;
 }
 
 .skills .contents {
- display: grid;
- row-gap: 30px;
- padding-left: 2em;
- padding-right: 2em; 
- justify-items: center;
- grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
- grid-area: contents;
- column-gap: 20px;
+	width: 100%;
+	display: grid;
+	row-gap: 30px;
+	padding-left: 2em;
+	padding-right: 2em;
+	justify-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	column-gap: 20px;
 }
 
 .skills img {
@@ -281,15 +281,17 @@ header p::after {
 .skills .info {
 	display: grid;
 	justify-items: center;
-	padding: 1em 0;
+	padding: 1em;
 	background-color: rgba(92, 93, 105, 1);
+	text-align: center;
 }
+
 /* akhir skills */
 
 /* channels */
 .channels .contents {
- padding-left: 2em;
- padding-right: 2em;
+	padding-left: 2em;
+	padding-right: 2em;
 }
 
 .channels .contents .wrapper {
@@ -389,6 +391,7 @@ header p::after {
 .side-tools .rocket:hover {
 	transform: translateY(-20vh);
 }
+
 /* akhir side tools */
 
 /* footer */
@@ -399,4 +402,5 @@ footer {
 	justify-items: center;
 	background-color: rgba(34, 33, 124, 1);
 }
+
 /* footer */
