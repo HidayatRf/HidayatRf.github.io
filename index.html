@@ -10,7 +10,15 @@
 	<link rel="stylesheet" href="./assets/css/reuseClass.css">
 	<link rel="stylesheet" href="./assets/css/font.css">
 	<link rel="stylesheet" href="./assets/css/screen.css">
-
+	
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	
+	<!-- font google -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+	
 	<title>HidayatRf</title>
 </head>
 
@@ -18,17 +26,16 @@
 
 	<section class="container">
 		<!-- navbar -->
-		<nav>
+		<nav class="transition-3">
 			<h3 class="capital">hidayatRf</h3>
 			<button type="submit" class="btn">X</button>
-			<ul class="navlink">
-				<li><a href="#about" class="link capital">about me</a></li>
-				<li><a href="#aplikasi" class="link capital">my tools</a></li>
-				<li><a href="#skills" class="link capital">my skills</a></li>
-				<li><a href="#none" class="link capital unavailable">my project</a></li>
-				<li><a href="#channels" class="link capital">channels</a></li>
-				<li><a href="contack-me.html" class="link capital unavailable">contack me</a></li>
-				<li><button class="btn capital" type="submit">X</button></li>
+			<ul class="navlink transition-3">
+				<li><a href="#about" class="link capital pointer">about me</a></li>
+				<li><a href="#skills" class="link capital pointer">my skills</a></li>
+				<li><a href="#tools" class="link capital pointer">my tools</a></li>
+				<li><a href="#projects" class="link capital pointer unavailable">my project</a></li>
+				<li><a href="#channels" class="link capital pointer">channels</a></li>
+				<li><a href="contact.html" class="link capital pointer">contack me</a></li>
 			</ul>
 		</nav>
 		<!-- akhir navbar-->
@@ -70,7 +77,7 @@
 					</p>
 				</div>
 				<div class="details detail-device">
-					<h4 class="capital">detail</h4>
+				
 					<p class="capital detail id">
 						saya menggunakan handPhone <strong>OPPO A15</strong> dalam belajar
 						maupun practice dari hasil belajar, handPhone saya memang bukan handPhone yang bagus
@@ -92,28 +99,28 @@
 		<section id="skills" class="skills wrapper_container">
 			<h3 class="capital">my skills</h3>
 			<div class="contents">
-				<div class="wrapper">
+				<div class="content">
 					<img src="./assets/image/skils/html.jpg" alt="" class="gambar">
 					<div class="info">
 						<h4 class="upperC">.html</h4>
 						<p class="capital">hyper text markup language</p>
 					</div>
 				</div>
-				<div class="wrapper">
+				<div class="content">
 					<img src="./assets/image/skils/css.jpg" alt="" class="gambar">
 					<div class="info">
 						<h4 class="upperC">.css</h4>
 						<p class="capital">cascading style sheet</p>
 					</div>
 				</div>
-				<div class="wrapper">
+				<div class="content">
 					<img src="./assets/image/skils/js.jpg" alt="" class="gambar">
 					<div class="info">
 						<h4 class="upperC">.js</h4>
 						<p class="capital">javascript</p>
 					</div>
 				</div>
-				<div class="wrapper">
+				<div class="content">
 					<img src="./assets/image/skils/python.jpg" alt="" class="gambar">
 					<div class="info">
 						<h4 class="upperC">.py</h4>
@@ -121,14 +128,63 @@
 					</div>
 				</div>
 			</div>
+			<div class="sub-skills">
+			  <h3 class="upperC">coming soon</h3>
+			  <div class="contents">
+			    <div class="content">
+			      <img src="./assets/image/skils/node.jpg" alt="">
+			      <h3 class="upperC">nodeJs</h3>
+			      <p class="capital">runtime for javascript</p>
+			    </div>
+			    <div class="content">
+			      <img src="./assets/image/skils/bootstrap.jpg" alt="">
+			      <h3 class="upperC">bootstrap</h3>
+			      <p class="capital">front end frame work</p>
+			    </div>
+			    <div class="content">
+			      <img src="./assets/image/skils/react.jpg" alt="">
+			      <h3 class="upperC">react js</h3>
+			      <p class="capital">front end frame work</p>
+			    </div>
+			    <div class="content">
+			      <img src="./assets/image/skils/ex.jpg" alt="">
+			      <h3 class="upperC">express js</h3>
+			      <p class="capital">web server</p>
+			    </div>
+			    <div class="content">
+			      <img src="./assets/image/skils/cSharp.jpg" alt="c# image">
+			      <h3 class="upperC">c#</h3>
+			      <p class="capital">for development game</p>
+			    </div>
+			  </div>
+			</div>
 		</section>
-
 		<!-- akhir skills -->
-
+		
+		<!-- projetcs section
+		<section class="project-section">
+			<h2 class="upperC">my projects</h2>
+			<div class="wrapper">
+				<div class="content">
+					<img src="assets/image/project/.jpg" alt="">
+					<div class="info">
+						<h4 class="upperC">
+							
+						</h4>
+						<p class="capital">
+							
+						</p>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		 end of projetcs section -->
+		
 		<!-- aplikasi -->
 		<section id="aplikasi" class="aplikasi wrapper_container">
 			<h3 class="capital">
-				daftar aplikasi
+				my tools
 			</h3>
 			<section class="contents wrapper_container">
 				<section class="wrapper">
@@ -137,7 +193,7 @@
 						<p class="capital">name : spck editor pro</p>
 						<p class="capital">size | ukuran : 105MB</p>
 						<p class="capital">status : gratis</p>
-						<a href="#none" class="link btn">download</a>
+						<a href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://play.google.com/store/apps/details%3Fid%3Dio.spck.editor.node%26hl%3Did%26gl%3DUS%26referrer%3Dutm_source%253Dgoogle%2526utm_medium%253Dorganic%2526utm_term%253Dspck%2Beditor%2Bpro%26pcampaignid%3DAPPU_1_XxjSY-TpBO6n3LUP186T6AY&ved=2ahUKEwiklYPjyOT8AhXuE7cAHVfnBG0Q8oQBegQIGxAB&usg=AOvVaw1VDS9AD5zpoNKB6-Eh2Ntl" class="link btn">download</a>
 					</div>
 					<div class="details detail-aplikasi">
 						<h4 class="capital">detail</h4>
@@ -161,7 +217,7 @@
 						<p class="capital">name : treb edit</p>
 						<p class="capital">size | ukuran : 20MB</p>
 						<p class="capital">status : gratis</p>
-						<a href="#none" class="link btn">download</a>
+						<a href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://happymod.com/trebedit-mobile-html-editor-mod/com.teejay.trebedit/&ved=2ahUKEwi8wqqOyeT8AhWK1HMBHYGPAksQFnoECBAQAQ&usg=AOvVaw0sEOb5P0AkPHIMw6l64G4u" class="link btn">download</a>
 					</div>
 					<div class="details detail-aplikasi">
 						<h4 class="capital">detail</h4>
@@ -183,7 +239,7 @@
 						<p class="capital">name : termux command line</p>
 						<p class="capital">size | ukuran : 98MB</p>
 						<p class="capital">status : gratis</p>
-						<a href="#none" class="link btn">download</a>
+						<a href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://f-droid.org/id/packages/com.termux/&ved=2ahUKEwiTqZeqyeT8AhVeSWwGHaF4BN8QFnoECA8QAQ&usg=AOvVaw2GGAfnBQB0KFJ9Az-Wio9p" class="link btn">download</a>
 					</div>
 					<div class="details detail-aplikasi">
 						<h4 class="capital">detail</h4>
@@ -205,17 +261,17 @@
 						<p class="capital">name : pixellab</p>
 						<p class="capital">size | ukuran : 68MB</p>
 						<p class="capital">status : gratis</p>
-						<a href="#none" class="link btn">download</a>
+						<a href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://play.google.com/store/apps/details%3Fid%3Dcom.imaginstudio.imagetools.pixellab%26hl%3Did%26gl%3DUS%26referrer%3Dutm_source%253Dgoogle%2526utm_medium%253Dorganic%2526utm_term%253Dpixellab%26pcampaignid%3DAPPU_1_HBnSY-qpNaOcseMP4LGjiA0&ved=2ahUKEwjqp8O9yeT8AhUjTmwGHeDYCNEQ5YQBegQIChAC&usg=AOvVaw0a-Dg9l-CX7Xq5b5dEhnic" class="link btn">download</a>
 					</div>
 					<div class="details detail-aplikasi">
 						<h4 class="capital">detail</h4>
 						<p class="capital detail id">
-							pixellab digunakan ketika mengubah/merize ukuran dari gambar yang ingin
+							pixellab digunakan ketika mengubah ukuran dari gambar yang ingin
 							ditampilkan di web, dan juga dapat dugunakan untuk membuat
 							layout design ataupun logo yang ingin dbuat
 						</p>
 						<p class="capital eng">
-							I use pixellab when changing/merizing the size of the image I
+							I use pixellab when changing the size of the image I
 							want displayed on the web, and can also be used to create
 							layout design or logo that you want to make
 						</p>
@@ -227,7 +283,7 @@
 						<p class="capital">name : hacker's keyboard</p>
 						<p class="capital">size | ukuran : 12MB</p>
 						<p class="capital">status : gratis</p>
-						<a href="#none" class="link btn">download</a>
+						<a href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://play.google.com/store/apps/details%3Fid%3Dorg.pocketworkstation.pckeyboard%26hl%3Den_US%26gl%3DUS%26referrer%3Dutm_source%253Dgoogle%2526utm_medium%253Dorganic%2526utm_term%253Dhacker%27s%2Bkeyboard%26pcampaignid%3DAPPU_1_RRnSY8TaKM3QseMP3euZwAY&ved=2ahUKEwiEkf3QyeT8AhVNaGwGHd11BmgQ5YQBegQICRAC&usg=AOvVaw0zuWKXUMNWGWc-JMqflb-L" class="link btn">download</a>
 					</div>
 					<div class="details detail-aplikasi">
 						<h4 class="capital">detail</h4>
@@ -251,6 +307,12 @@
 		<!-- channels -->
 		<section id="channels" class="channels wrapper_container">
 			<h3 class="capital">indonesia channel programming</h3>
+			<p class="capital deskripsi">
+			  chanel chanel yang telah bejasa memberikan ilmu
+			  yang berharga kepada kita, sebagai tanda terimakasih
+			  saya cantumkan beberapa daftar chanel yang bisa kalian lihat
+			  dan jangan lupa beri mereka support.
+			</p>
 			<section class="contents">
 				<div class="wrapper">
 					<div class="wrapper-gambar">
@@ -259,7 +321,7 @@
 					<div class="info info-channel">
 						<p class="capital">name: wpu</p>
 						<p class="capital">subscribers: 230.000</p>
-						<button data-id="wpu" type="submit" class="btn detail-channel capital">
+						<button data-id="wpu" type="submit" class="btn detail-channel capital transition-3">
 							details chanel
 						</button>
 					</div>
@@ -271,7 +333,7 @@
 					<div class="info info-channel">
 						<p class="capital">name: kelas terbuka</p>
 						<p class="capital">subscribers: 230.000</p>
-						<button data-id="kelasTerbuka" type="submit" class="btn detail-channel capital">
+						<button data-id="kelasTerbuka" type="submit" class="btn detail-channel capital transition-3">
 							details chanel
 						</button>
 					</div>
@@ -283,12 +345,15 @@
 					<div class="info info-channel">
 						<p class="capital">name: pZamanNow</p>
 						<p class="capital">subscribers: 230.000</p>
-						<button data-id="pZamanNow" type="submit" class="btn detail-channel capital">
+						<button data-id="pZamanNow" type="submit" class="btn detail-channel capital transition-3">
 							details chanel
 						</button>
 					</div>
 				</div>
 			</section>
+			<button type="submit" class="transition-3 show-channels">
+			  <h3 class="upperC">show</h3>
+			</button>
 		</section>
 		<!-- akhir channels -->
 
@@ -319,13 +384,13 @@
 						web jalur backend yang dimana berhubungan dengan basis data pada web tersebut
 					</p>
 					<p class="capital eng">
-						Unpas web programming, on this channel you will be taught the basics
+						web programming Unpas, on this channel you will be taught the basics
 						of web creation starting from the basic <strong>HTML, CSS, JAVASCRIPT</strong>
 						to the framework and even taught also in development web backend path which is
 						related to the database on the web
 					</p>
+  				<button class="btn close upperC transition-3">close</button>
 				</div>
-				<button class="btn close">close</button>
 			</div>
 			<div data-id="pZamanNow" class="wrapper wrapper_container">
 				<img src="./assets/image/p-z-m-n.jpg" alt="" class="gambar rounded-img">
@@ -358,8 +423,8 @@
 						<strong>java, php, nodejs, javascript, golang</strong> not only material about
 						the basis of the language, lots of videos uploaded by today's programmers about how to do job interviews, tips and tricks
 					</p>
+  				<button class="btn close upperC transition-3">close</button>
 				</div>
-				<button class="btn close">close</button>
 			</div>
 			<div data-id="kelasTerbuka" class="wrapper wrapper_container">
 				<img src="./assets/image/kelasTerbuka.jpg" alt="" class="gambar rounded-img">
@@ -389,28 +454,36 @@
 						kelas terbuka here this channel you will taught the basics of various programming languages such as <strong>java, python and cpp/c++</strong>
 						even to the concept of <strong>OOP</strong> or object oriented programming, or in Indonesian it is called pemrograman berorientasi objek
 					</p>
+  				<button class="btn close upperC transition-3">close</button>
 				</div>
-				<button class="btn close">close</button>
 			</div>
 		</section>
 		<!-- akhir modal channel -->
 
-		<section class="side-tools">
+		<section class="side-tools transition-3">
 			<img class="english-subs" src="assets/image/side-tools/engFlag.jpg" alt="english-subs" class="eng">
 			<a class="rocket-a" href="#home">
-				<img class="rocket" src="assets/image/side-tools/rocket.png" alt="to-top" class="to-top">
+				<img class="rocket" src="assets/image/side-tools/rocket.png" alt="to-top" class="to-top transition-3">
 			</a>
 		</section>
-
+    
+    
 		<!-- footer -->
 		<footer>
 			<h3>create by <span class="capital">HidayatRf | reza fairuz</span></h3>
+			<ul>
+			  <li><a href="#home" class="link pointer upperC transition-3">home</a></li>
+			  <li><a href="#about" class="link pointer upperC transition-3">about</a></li>
+			  <li><a href="#project" class="link pointer upperC transition-3">my projects</a></li>
+			  <li><a href="#skills" class="link pointer upperC transition-3">my skills</a></li>
+			  <li><a href="#tools" class="link pointer upperC transition-3">aplikasi</a></li>
+			  <li><a href="channels" class="link pointer upperC transition-3">channels</a></li>
+			</ul>
 		</footer>
 		<!-- akhir footer -->
 	</section>
 
-	<script src="./all.js"></script>
-	<script src="./main.js"></script>
+	<script src="./js/main.js"></script>
 </body>
 
 </html>

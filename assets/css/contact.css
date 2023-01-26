@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  background: transparent;
+  outline: none;
+  border: none;
+  background-repeat: no-repeat;
+  font-size: 1rem;
+}
+
+html,
+body {
+  display: grid;
+  align-content: center;
+  color: white;
+  background-color: rgba(35, 65, 85, 1);
+}
+
+/* end of reset */
+
+.container {
+  display: grid;
+  padding: 1em 1.2em;
+  row-gap: 65px;
+  align-items: center;
+}
+
+.container h2 {
+  justify-self: center;
+}
+
+.container .user-input {
+  display: grid;
+  row-gap: 10px;
+  justify-items: start;
+}
+
+#input-message {
+  height: 300px;
+  padding: .5em;
+  color: white;
+  background-color: rgba(32, 42, 63, 1);
+  border-radius: .25em;
+  border: 2px solid rgba(9, 70, 132, 1);
+}
+
+#input-message:hover {
+  box-shadow: 0 0 20px rgba(165, 179, 193, .2);
+}
+
+.container button {
+  justify-self: center;
+}
+
+
+form input {
+  padding: .5em;
+  border-radius: .35em;
+  color: white;
+  transition: .3s;
+  background-color: rgba(156, 204, 255, 0.32);
+  border: 3px solid rgba(102, 177, 255, 1);
+}
+
+form input:hover {
+  box-shadow: 0 0 20px rgba(3, 93, 186, 0.43);
+}
+
+.container .submit-message {
+  padding: 1em 1.5em;
+  border-radius: 1em;
+  color: white;
+  background-color: rgba(20, 143, 61, 1);
+  border: 2px solid rgba(125, 189, 75, 1);
+}
+
+.container .submit-message:hover {
+  color: black;
+  font-weight: bold;
+  background-color: rgba(30, 163, 91, 1);
+  box-shadow: 0 0 20px rgba(5, 176, 22, .5)
+}
+
+@media(min-width: 980px) {
+  body {
+    padding: 0 5vw;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-areas:
+      "h2 h2"
+      "user-input message-input"
+      "submit message-input";
+  }
+
+  .container h2 {
+    grid-area: h2;
+  }
+
+  .container .form-input {
+    grid-area: user-input;
+    justify-self: start;
+    align-self: start;
+  }
+
+  .container .submit-message {
+    grid-area: submit;
+    align-self: start;
+    justify-self: start;
+  }
+
+  .container .input-message {
+    grid-area: message-input;
+    align-self: stretch;
+    justify-self: start;
+  }
+}

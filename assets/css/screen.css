@@ -135,7 +135,11 @@
 		padding-right: 1em;
 		grid-template-columns: 1fr 1fr;
 	}
-
+  
+  .aplikasi .contents .wrapper .info-aplikasi {
+   border: none;
+  }
+  
 	/* akhir aplikasi */
 
 	.channels .contents .wrapper {
@@ -148,8 +152,8 @@
 		margin: 0 auto;
 		grid-template-areas:
 			"gambar detail-channel"
-			"info-channel media"
-			"close close";
+			"info-channel detail-channel"
+			"media detail-channel";
 		justify-content: space-around;
 		justify-items: center;
 		align-items: center;
@@ -170,6 +174,9 @@
 	.modal-channel .wrapper .detail-channel {
 		grid-area: detail-channel;
 		width: 90%;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
 	}
 
 	.modal-channel .wrapper .media {
@@ -182,6 +189,25 @@
 	}
 
 	/* akhir modal channel */
+	
+	/* side tool */
+	.side-tools {
+   width: 8%;
+	 align-items: center;
+	 column-gap: 10px;
+	 grid-template-columns: 1fr 1fr;
+	}
+	/* akhir side tool */
+	
+	/* footer */
+	footer ul {
+	 display: flex;
+	}
+	
+	footer ul li {
+	 margin: 0 1rem;
+	}
+	/* akhir footer */
 }
 
 
@@ -220,8 +246,21 @@
 	/* about */
 	.about {
 		padding: 5em 8em;
-	}
-
+		grid-template-areas: 
+		  "h3 h3"
+		  "p device";
+		align-items: center;
+		justify-items: center;
+		text-align: center;
+		column-gap: 50px;
+	}  
+  
+  .about h3 { grid-area: h3; }
+  .about p { grid-area: p;}
+  .about .content { 
+    grid-area: device; 
+    text-align: center;
+  }
 	/* akhir about */
 
 	/* aplikasi */

@@ -31,7 +31,7 @@ body {
 	display: grid;
 	color: #fff;
 	scroll-behavior: smooth;
-	font-family: "poppinsMedium";
+	font-family: "Poppins";
 	overflow-x: hidden;
 	background-color: rgb(22, 33, 62);
 }
@@ -74,7 +74,11 @@ nav {
 	position: fixed;
 	left: 0;
 	z-index: 999;
-	transition: .3s;
+	
+}
+
+nav .unavailable {
+  color: red;
 }
 
 nav.navClass {
@@ -94,8 +98,9 @@ nav .navlink {
 	padding: 10px 0;
 	height: 65vh;
 	justify-content: space-around;
-	border-radius: .30em;
-	transition: .6s;
+	border-bottom-right-radius: .30em;
+	border-bottom-left-radius: .30em;
+	backdrop-filter: blur(3px);
 }
 
 /* akhir nav */
@@ -120,35 +125,29 @@ header p {
 }
 
 header p::before {
-	content: '';
-	width: 25px;
-	height: 5px;
-	display: block;
-	position: absolute;
-	top: -3px;
-	right: 0;
+  top: -2px;
 	animation-name: before;
-	animation-duration: 1s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-	background-color: red;
 }
 
 header p::after {
-	content: '';
-	width: 25px;
-	height: 5px;
-	display: block;
-	position: absolute;
-	bottom: -3px;
-	left: 0;
-	background-color: red;
+  bottom: -2px;
 	animation-name: after;
-	animation-duration: 1s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+}
+
+header p:before,
+header p:after {
+  content: '';
+  width: 25px;
+  height: 5px;
+  display: block;
+  position: absolute;
+  border-radius: .45em;
+  background-color: rgba(16, 144, 214, 1);
+  box-shadow: 0 0 20px rgba(62, 208, 255, 0.58);
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 @keyframes before {
@@ -168,19 +167,19 @@ header p::after {
 }
 
 @keyframes after {
-	0% {
-		left: 0;
-		opacity: 0;
-	}
+  0% {
+    left: 0;
+    opacity: 0;
+  }
 
-	50% {
-		opacity: 1;
-	}
+  50% {
+    opacity: 1;
+  }
 
-	100% {
-		left: 90%;
-		opacity: 0;
-	}
+  100% {
+    left: 90%;
+    opacity: 0;
+  }
 }
 
 /* akhir header */
@@ -231,6 +230,7 @@ header p::after {
 	display: grid;
 	row-gap: 20px;
 	padding: 1em;
+	align-items: center;
 	border-radius: .60em;
 	background-color: rgba(6, 38, 81, 1);
 	border: 3px solid hsla(214, 88%, 35%, 1);
@@ -246,13 +246,15 @@ header p::after {
 	row-gap: 5px;
 	justify-items: start;
 	padding-top: 10px;
-	border-top: 2px solid rgba(130, 130, 222, 1);
+	border-top: 2px solid rgba(0, 0, 0, 1);
 }
 
 .aplikasi .contents .wrapper .detail-aplikasi {
 	display: grid;
 	row-gap: 10px;
+	padding: .5rem;
 	justify-items: center;
+	background-color: rgba(31, 81, 125, .6);
 }
 
 /* akhir aplikasi */
@@ -260,17 +262,18 @@ header p::after {
 /* skills */
 .skills {
 	display: grid;
+	row-gap: 45px;
+	text-align: center;
 }
 
-.skills .contents {
-	width: 100%;
-	display: grid;
-	row-gap: 30px;
-	padding-left: 2em;
-	padding-right: 2em;
-	justify-items: center;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	column-gap: 20px;
+.skills .contents,
+.skills .sub-skills .contents {
+  width: 86%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+  row-gap: 35px;
+  column-gap: 20px;
 }
 
 .skills img {
@@ -278,12 +281,21 @@ header p::after {
 	border-top-right-radius: .45em;
 }
 
-.skills .info {
-	display: grid;
-	justify-items: center;
-	padding: 1em;
-	background-color: rgba(92, 93, 105, 1);
-	text-align: center;
+.skills .content {
+  padding: .5rem 1rem;
+  border: 2px solid rgba(64, 68, 121, 0.88);
+}
+
+.skills .sub-skills {
+ display: grid;
+ row-gap: 45px;
+ justify-items: center;
+}
+
+.skills .sub-skills .content {
+  filter: saturate(0.3);
+  opacity: .8;  
+  row-gap: 10px;
 }
 
 /* akhir skills */
@@ -292,6 +304,21 @@ header p::after {
 .channels .contents {
 	padding-left: 2em;
 	padding-right: 2em;
+}
+
+.channels .deskripsi {
+  text-align: center;
+}
+
+.channels .show-channels {
+  padding: .5rem 1rem;
+  border-radius: 1rem;
+  background-color: rgba(14, 167, 64, 1);
+}
+
+.channels .show-channels:hover {
+  box-shadow: 0 0 16px rgba(59, 255, 123, 0.36);
+  background-color: rgba(18, 209, 80, 1)
 }
 
 .channels .contents .wrapper {
@@ -306,15 +333,26 @@ header p::after {
 }
 
 .channels .contents {
-	display: grid;
+	display: none;
 	row-gap: 40px;
 	justify-items: center;
+}
+
+.channels .contents.show {
+  display: grid;
 }
 
 .channels .contents .wrapper .info-channel {
 	display: grid;
 	row-gap: 5px;
-	justify-items: center;
+	justify-items: start;
+}
+
+.channels .contents .wrapper .detail-channel:hover {
+  background-color: rgba(24, 48, 85, 1);
+  border-width: 2.5px;
+  border-color: rgba(188, 236, 253, 1);
+  box-shadow: 0 0 20px rgba(73, 144, 255, 0.61);
 }
 
 .channels .contents .wrapper .wrapper-gambar {
@@ -340,18 +378,31 @@ header p::after {
 
 .modal-channel .wrapper {
 	display: none;
-	padding: 1.3em;
 	justify-items: center;
-	border-radius: 5px;
+	overflow: hidden;
+	border-radius: 1em;
 	background: linear-gradient(to top left,
 			rgba(35, 24, 125, 1),
 			rgba(35, 24, 65, .6));
 	border: 3.5px solid rgba(17, 82, 195, 1);
+	z-index: 50;
+}
+
+.modal-channel .wrapper .close {
+  justify-self: center;
+}
+
+.modal-channel .wrapper .close:hover {
+  background-color: rgba(158, 7, 7, 1);
+  border-color: rgba(177, 0, 0, 1);
+  box-shadow: 0 0 20px rgba(255, 60, 60, 0.57);
 }
 
 .modal-channel .wrapper .detail-channel {
 	display: grid;
 	row-gap: 10px;
+	padding: 1em 2em;
+	background-color: rgba(16, 34, 62, 1);
 }
 
 .modal-channel .wrapper .gambar {
@@ -365,19 +416,12 @@ header p::after {
 .side-tools {
 	display: grid;
 	align-content: center;
-	row-gap: 20px;
+	row-gap: 10px;
 	position: fixed;
-	max-width: 5%;
+	width: 5%;
 	bottom: 1.5em;
 	right: 1em;
-	transition: .3s;
-}
-
-.side-tools:hover {
-	padding: 1em;
-	border-radius: 1em;
-	background-color: rgba(10, 65, 92, .8);
-	max-width: 15%;
+	
 }
 
 .side-tools .english-subs {
@@ -385,7 +429,7 @@ header p::after {
 }
 
 .side-tools .rocket {
-	transition: .4s;
+  transition: .3s;
 }
 
 .side-tools .rocket:hover {
@@ -399,8 +443,21 @@ footer {
 	width: 100%;
 	padding: 12px 0;
 	display: grid;
+	row-gap: 20px;
 	justify-items: center;
-	background-color: rgba(34, 33, 124, 1);
+	background-color: rgba(35, 68, 149, 1);
 }
 
+footer .link {
+  font-size: .9rem;
+  opacity: .8;
+}
+
+footer .link:hover {
+  opacity: 1;
+}
+
+footer ul {
+  text-align: center;
+}
 /* footer */

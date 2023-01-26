@@ -1,27 +1,32 @@
 const navbar = document.querySelector('nav')
-const uNavItem = navbar.querySelectorAll('.unavailable')
 const openNav = navbar.querySelector('button')
 const navlink = navbar.querySelector('.navlink')
-const closeNav = navlink.querySelector('button')
+const linkUnavailable = navlink.querySelectorAll('.unavailable')
+linkUnavailable.forEach(item => {
+  item.addEventListener('click', () => alert('link unavailable'))
+})
+
+let navOpened = true
 
 openNav.addEventListener('click', () => {
-	navlink.style.top = 0 + "px"
-	navlink.style.right = 0
-	openNav.style.opacity = "0"
-	navlink.style.backdropFilter = 'blur(0px)'
-	uNavItem.forEach(item => item.style.color = "rgba(180, 20, 20, .6)")
+  if (navOpened) {
+  	navlink.style.top = navbar.clientHeight + "px"
+  	navlink.style.right = 0
+  	navOpened = false
+  }else {
+    navlink.style.right = "-2000px"
+    navOpened = true
+  }
 })
-
-closeNav.addEventListener('click', () => {
-	navlink.style.right = -1000 + "px"
-	navlink.style.backdropFilter = 'blur(0px)'
-	openNav.style.opacity = 1
-})
-
 
 // event pada channel | modal channel
 const channels = document.querySelector(".channels")
+const channelContents = channels.querySelector(".contents")
 const buttonChannels = channels.querySelectorAll("button")
+const showChannels = channels.querySelector(".show-channels")
+showChannels.addEventListener('click', () => {
+  channelContents.classList.toggle('show')
+})
 
 // modal channel
 const modalChannel = document.querySelector('.modal-channel')
@@ -56,7 +61,6 @@ function showModalChannel(button) {
 window.addEventListener('scroll', () => {
 	const wScroll = Math.round(window.scrollY)
 	navbar.classList.toggle('navClass', wScroll > 1.5)
-	navlink.style.backdropFilter = 'blur(5px)'
 })
 
 // side tools
@@ -74,17 +78,17 @@ engSubs.addEventListener('click', () => {
 	if (coolDown == true) {
 		alert("english subtitle on")
 		engSubs.style.border = "2px solid white"
-		for ( let i = 0; i < idSubsText.length; i++ ) {
+		for (let i = 0; i < idSubsText.length; i++) {
 			idSubsText[i].style.display = "none"
 			engSubsText[i].style.display = "block"
 		}
-		for(let i = 0; i < h4Id.length; i++) {
+		for (let i = 0; i < h4Id.length; i++) {
 			h4Id[i].style.display = "none"
 			h4Eng[i].style.display = "block"
 		}
 		coolDown = false
 		return
-	}else {
+	} else {
 		alert("english subtitle off")
 		engSubs.style.border = "none"
 		for (let i = 0; i < idSubsText.length; i++) {
