@@ -66,6 +66,7 @@ window.addEventListener('scroll', () => {
 // side tools
 const sideTools = document.querySelector('.side-tools')
 const engSubs = sideTools.querySelector('.english-subs')
+const rocket = sideTools.querySelector('.rocket')
 
 const idSubsText = document.querySelectorAll('p.id')
 const engSubsText = document.querySelectorAll('p.eng')
@@ -102,4 +103,11 @@ engSubs.addEventListener('click', () => {
 		coolDown = true
 		return
 	}
+})
+
+rocket.addEventListener('click', () => {
+  rocket.style.transform = "translateY(-50vh)"
+  setTimeout(() => {
+    rocket.style.transform = "translateY(0vh)"
+  }, 600)
 })

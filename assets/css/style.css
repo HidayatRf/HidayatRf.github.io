@@ -428,14 +428,6 @@ header p:after {
 	border-radius: 100%;
 }
 
-.side-tools .rocket {
-  transition: .3s;
-}
-
-.side-tools .rocket:hover {
-	transform: translateY(-20vh);
-}
-
 /* akhir side tools */
 
 /* footer */
